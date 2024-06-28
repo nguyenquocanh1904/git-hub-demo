@@ -4,18 +4,18 @@
 00:38:57.371 [main] INFO  com.poly.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
 00:38:58.228 [main] DEBUG com.poly.backend.config.CustomJwtFilter - Filter 'customJwtFilter' configured for use
 00:39:00.051 [main] INFO  com.poly.backend.BackendApplication - Started BackendApplication in 2.902 seconds (process running for 3.564)
-00:39:23.897 [http-nio-8080-exec-5] INFO  com.poly.backend.controller.TeacherController - Lấy toàn bộ danh sách Giảng viên thành công
-00:39:33.130 [http-nio-8080-exec-6] INFO  com.poly.backend.controller.TeacherController - Lấy toàn bộ danh sách Giảng viên thành công
-00:39:47.837 [http-nio-8080-exec-7] INFO  com.poly.backend.controller.TeacherController - Lấy toàn bộ danh sách Giảng viên thành công
-00:40:08.402 [http-nio-8080-exec-9] WARN  com.poly.backend.controller.TeacherController - Không tìm thấy Giảng viên, ID: 1
-00:40:08.403 [http-nio-8080-exec-9] ERROR com.poly.backend.controller.TeacherController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
+00:39:23.897 [http-nio-8080-exec-5] INFO  com.poly.backend.controller.InstructorController - Lấy toàn bộ danh sách Giảng viên thành công
+00:39:33.130 [http-nio-8080-exec-6] INFO  com.poly.backend.controller.InstructorController - Lấy toàn bộ danh sách Giảng viên thành công
+00:39:47.837 [http-nio-8080-exec-7] INFO  com.poly.backend.controller.InstructorController - Lấy toàn bộ danh sách Giảng viên thành công
+00:40:08.402 [http-nio-8080-exec-9] WARN  com.poly.backend.controller.InstructorController - Không tìm thấy Giảng viên, ID: 1
+00:40:08.403 [http-nio-8080-exec-9] ERROR com.poly.backend.controller.InstructorController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
 00:40:25.661 [main] INFO  com.poly.backend.BackendApplication - Starting BackendApplication using Java 22.0.1 with PID 5656 (G:\java5\TeachingTrackingEvaluation\TeachingTrackingEvaluation\backend\target\classes started by ADMIN in G:\java5\TeachingTrackingEvaluation\TeachingTrackingEvaluation)
 00:40:25.667 [main] DEBUG com.poly.backend.BackendApplication - Running with Spring Boot v3.0.2, Spring v6.0.4
 00:40:25.667 [main] INFO  com.poly.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
 00:40:26.528 [main] DEBUG com.poly.backend.config.CustomJwtFilter - Filter 'customJwtFilter' configured for use
 00:40:28.317 [main] INFO  com.poly.backend.BackendApplication - Started BackendApplication in 2.888 seconds (process running for 3.514)
-00:40:33.482 [http-nio-8080-exec-2] WARN  com.poly.backend.controller.TeacherController - Không tìm thấy Giảng viên, ID: 1
-00:40:33.482 [http-nio-8080-exec-2] ERROR com.poly.backend.controller.TeacherController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
+00:40:33.482 [http-nio-8080-exec-2] WARN  com.poly.backend.controller.InstructorController - Không tìm thấy Giảng viên, ID: 1
+00:40:33.482 [http-nio-8080-exec-2] ERROR com.poly.backend.controller.InstructorController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
 
 ok
 00:40:58.322 [main] INFO  com.poly.backend.BackendApplication - Starting BackendApplication using Java 22.0.1 with PID 20728 (G:\java5\TeachingTrackingEvaluation\TeachingTrackingEvaluation\backend\target\classes started by ADMIN in G:\java5\TeachingTrackingEvaluation\TeachingTrackingEvaluation)
@@ -23,17 +23,17 @@ ok
 00:40:58.328 [main] INFO  com.poly.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
 00:40:59.173 [main] DEBUG com.poly.backend.config.CustomJwtFilter - Filter 'customJwtFilter' configured for use
 00:41:01.079 [main] INFO  com.poly.backend.BackendApplication - Started BackendApplication in 2.968 seconds (process running for 3.601)
-00:41:11.954 [http-nio-8080-exec-2] WARN  com.poly.backend.controller.TeacherController - Không tìm thấy Giảng viên, ID: 1
-00:41:11.954 [http-nio-8080-exec-2] ERROR com.poly.backend.controller.TeacherController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
-00:41:44.992 [http-nio-8080-exec-3] WARN  com.poly.backend.controller.TeacherController - Không tìm thấy Giảng viên, ID: 1
-00:41:44.992 [http-nio-8080-exec-3] ERROR com.poly.backend.controller.TeacherController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
-00:41:58.002 [http-nio-8080-exec-4] WARN  com.poly.backend.controller.TeacherController - Không tìm thấy Giảng viên, ID: 1
-00:41:58.002 [http-nio-8080-exec-4] ERROR com.poly.backend.controller.TeacherController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
-00:41:58.937 [http-nio-8080-exec-5] WARN  com.poly.backend.controller.TeacherController - Không tìm thấy Giảng viên, ID: 1
-00:41:58.937 [http-nio-8080-exec-5] ERROR com.poly.backend.controller.TeacherController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
-00:41:59.743 [http-nio-8080-exec-6] WARN  com.poly.backend.controller.TeacherController - Không tìm thấy Giảng viên, ID: 1
-00:41:59.743 [http-nio-8080-exec-6] ERROR com.poly.backend.controller.TeacherController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
-00:42:00.334 [http-nio-8080-exec-7] WARN  com.poly.backend.controller.TeacherController - Không tìm thấy Giảng viên, ID: 1
-00:42:00.334 [http-nio-8080-exec-7] ERROR com.poly.backend.controller.TeacherController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
-00:42:03.428 [http-nio-8080-exec-8] INFO  com.poly.backend.controller.TeacherController - Lấy toàn bộ danh sách Giảng viên thành công
-00:42:04.155 [http-nio-8080-exec-9] INFO  com.poly.backend.controller.TeacherController - Lấy toàn bộ danh sách Giảng viên thành công
+00:41:11.954 [http-nio-8080-exec-2] WARN  com.poly.backend.controller.InstructorController - Không tìm thấy Giảng viên, ID: 1
+00:41:11.954 [http-nio-8080-exec-2] ERROR com.poly.backend.controller.InstructorController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
+00:41:44.992 [http-nio-8080-exec-3] WARN  com.poly.backend.controller.InstructorController - Không tìm thấy Giảng viên, ID: 1
+00:41:44.992 [http-nio-8080-exec-3] ERROR com.poly.backend.controller.InstructorController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
+00:41:58.002 [http-nio-8080-exec-4] WARN  com.poly.backend.controller.InstructorController - Không tìm thấy Giảng viên, ID: 1
+00:41:58.002 [http-nio-8080-exec-4] ERROR com.poly.backend.controller.InstructorController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
+00:41:58.937 [http-nio-8080-exec-5] WARN  com.poly.backend.controller.InstructorController - Không tìm thấy Giảng viên, ID: 1
+00:41:58.937 [http-nio-8080-exec-5] ERROR com.poly.backend.controller.InstructorController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
+00:41:59.743 [http-nio-8080-exec-6] WARN  com.poly.backend.controller.InstructorController - Không tìm thấy Giảng viên, ID: 1
+00:41:59.743 [http-nio-8080-exec-6] ERROR com.poly.backend.controller.InstructorController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
+00:42:00.334 [http-nio-8080-exec-7] WARN  com.poly.backend.controller.InstructorController - Không tìm thấy Giảng viên, ID: 1
+00:42:00.334 [http-nio-8080-exec-7] ERROR com.poly.backend.controller.InstructorController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên
+00:42:03.428 [http-nio-8080-exec-8] INFO  com.poly.backend.controller.InstructorController - Lấy toàn bộ danh sách Giảng viên thành công
+00:42:04.155 [http-nio-8080-exec-9] INFO  com.poly.backend.controller.InstructorController - Lấy toàn bộ danh sách Giảng viên thành công

@@ -1,0 +1,2 @@
+11:47:58.708 [http-nio-8080-exec-4] WARN  com.poly.backend.controller.InstructorController - Không tìm thấy Giảng viên để xóa, ID: 20
+11:47:58.710 [http-nio-8080-exec-4] ERROR com.poly.backend.controller.InstructorController - Lỗi khi xóa Giảng viên, ID: 20: Không tìm thấy Giảng viên để xóa

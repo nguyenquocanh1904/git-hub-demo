@@ -1,0 +1,2 @@
+11:48:15.776 [http-nio-8080-exec-7] WARN  com.poly.backend.controller.InstructorController - Không tìm thấy Giảng viên, ID: 1
+11:48:15.780 [http-nio-8080-exec-7] ERROR com.poly.backend.controller.InstructorController - Lỗi khi lấy thông tin Giảng viên, ID: 1: Không tìm thấy Giảng viên

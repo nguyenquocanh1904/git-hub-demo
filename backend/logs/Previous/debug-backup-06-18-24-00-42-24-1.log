@@ -1,1 +1,1 @@
-00:42:24.610 [http-nio-8080-exec-2] INFO  com.poly.backend.controller.TeacherController - Lấy toàn bộ danh sách Giảng viên thành công
+00:42:24.610 [http-nio-8080-exec-2] INFO  com.poly.backend.controller.InstructorController - Lấy toàn bộ danh sách Giảng viên thành công

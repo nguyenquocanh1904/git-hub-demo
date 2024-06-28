@@ -1,0 +1,2 @@
+14:53:24.007 [main] DEBUG com.poly.backend.BackendApplication - Running with Spring Boot v3.0.2, Spring v6.0.4
+14:53:24.009 [main] INFO  com.poly.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
