@@ -1,4 +1,4 @@
-package com.poly.backend.mappers;
+package com.poly.backend.mapper;
 
 import com.poly.backend.dto.SignUpDTO;
 import com.poly.backend.dto.UserDTO;

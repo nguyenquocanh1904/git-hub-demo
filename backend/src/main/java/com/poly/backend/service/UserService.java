@@ -6,7 +6,7 @@ import com.poly.backend.dto.UserDTO;
 import com.poly.backend.exception.AppUnCheckedException;
 import com.poly.backend.repository.UserRepository;
 import com.poly.backend.entity.User;
-import com.poly.backend.mappers.UserMapper;
+import com.poly.backend.mapper.UserMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;

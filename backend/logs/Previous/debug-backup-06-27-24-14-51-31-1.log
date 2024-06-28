@@ -1,0 +1,4 @@
+14:51:31.011 [main] INFO  com.poly.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 5320 (G:\java5\TeachingTrackingEvaluation\TeachingTrackingEvaluation\backend\target\classes started by ADMIN in G:\java5\TeachingTrackingEvaluation\TeachingTrackingEvaluation)
+14:51:31.021 [main] DEBUG com.poly.backend.BackendApplication - Running with Spring Boot v3.0.2, Spring v6.0.4
+14:51:31.021 [main] INFO  com.poly.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"
+14:51:31.842 [main] DEBUG com.poly.backend.config.CustomJwtFilter - Filter 'customJwtFilter' configured for use

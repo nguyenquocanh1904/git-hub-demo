@@ -1,0 +1,3 @@
+11:28:56.435 [main] INFO  com.poly.backend.BackendApplication - Starting BackendApplication using Java 21.0.3 with PID 2608 (G:\java5\TeachingTrackingEvaluation\TeachingTrackingEvaluation\backend\target\classes started by ADMIN in G:\java5\TeachingTrackingEvaluation\TeachingTrackingEvaluation)
+11:28:56.445 [main] DEBUG com.poly.backend.BackendApplication - Running with Spring Boot v3.1.0, Spring v6.0.9
+11:28:56.446 [main] INFO  com.poly.backend.BackendApplication - No active profile set, falling back to 1 default profile: "default"

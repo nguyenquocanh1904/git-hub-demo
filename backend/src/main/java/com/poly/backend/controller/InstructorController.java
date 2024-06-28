@@ -1,9 +1,9 @@
 package com.poly.backend.controller;
 
-import com.poly.backend.dto.TeacherDTO;
+import com.poly.backend.dto.InstructorDTO;
 import com.poly.backend.dto.response.Response;
 import com.poly.backend.exception.AppUnCheckedException;
-import com.poly.backend.service.TeacherService;
+import com.poly.backend.service.InstructorService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -30,13 +30,13 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/teachers")
 @Validated
-public class TeacherController {
+public class InstructorController {
 
-    private final TeacherService teacherService;
-    private static final Logger logger = LoggerFactory.getLogger(TeacherController.class);
+    private final InstructorService instructorService;
+    private static final Logger logger = LoggerFactory.getLogger(InstructorController.class);
 
-    public TeacherController(TeacherService teacherService) {
-        this.teacherService = teacherService;
+    public InstructorController(InstructorService instructorService) {
+        this.instructorService = instructorService;
     }
     /**
      * Endpoint: GET /api/teachers
@@ -47,7 +47,7 @@ public class TeacherController {
     @GetMapping
     public ResponseEntity<Response> getAllTeachers() {
         try {
-            List<TeacherDTO> teachers = teacherService.getAllTeachers();
+            List<InstructorDTO> teachers = instructorService.getAllTeachers();
             logger.info("Lấy toàn bộ danh sách Giảng viên thành công");
             return ResponseEntity.ok(new Response(LocalDateTime.now(), teachers, "Lấy toàn bộ danh sách Giảng viên thành công", HttpStatus.OK.value()));
         } catch (AppUnCheckedException e) {
@@ -98,7 +98,7 @@ public class TeacherController {
     @GetMapping("/{id}")
     public ResponseEntity<Response> getTeacherById(@PathVariable long id) {
         try {
-            Optional<TeacherDTO> teacher = teacherService.getTeacherById(id);
+            Optional<InstructorDTO> teacher = instructorService.getTeacherById(id);
             if (teacher.isPresent()) {
                 logger.info("Lấy thông tin Giảng viên thành công, ID: {}", id);
                 return ResponseEntity.ok(new Response(LocalDateTime.now(), teacher.get(), "Lấy thông tin Giảng viên thành công", HttpStatus.OK.value()));
@@ -114,13 +114,13 @@ public class TeacherController {
     /**
      * Endpoint: POST /api/teachers
      * Chức năng: Thêm một Giảng viên mới.
-     * Xử lý: Gọi teacherService.addTeacher(teacherDTO) để thêm Giảng viên mới.
+     * Xử lý: Gọi teacherService.addTeacher(instructorDTO) để thêm Giảng viên mới.
      * Phản hồi: Trả về thông tin của Giảng viên đã được thêm và thông báo thành công, hoặc phản hồi lỗi nếu có lỗi.
      */
     @PostMapping
-    public ResponseEntity<Response> addTeacher(@Valid @RequestBody TeacherDTO teacherDTO) {
+    public ResponseEntity<Response> addTeacher(@Valid @RequestBody InstructorDTO instructorDTO) {
         try {
-            TeacherDTO addedTeacher = teacherService.addTeacher(teacherDTO);
+            InstructorDTO addedTeacher = instructorService.addTeacher(instructorDTO);
             logger.info("Thêm Giảng viên thành công, ID: {}", addedTeacher.getId());
             return ResponseEntity.status(HttpStatus.CREATED).body(new Response(LocalDateTime.now(), addedTeacher, "Thêm Giảng viên thành công", HttpStatus.CREATED.value()));
         } catch (AppUnCheckedException e) {
@@ -131,13 +131,13 @@ public class TeacherController {
     /**
      * Endpoint: PUT /api/teachers/{id}
      * Chức năng: Cập nhật thông tin của một Giảng viên.
-     * Xử lý: Gọi teacherService.updateTeacher(id, teacherDTO) để cập nhật thông tin Giảng viên.
+     * Xử lý: Gọi teacherService.updateTeacher(id, instructorDTO) để cập nhật thông tin Giảng viên.
      * Phản hồi: Trả về thông tin của Giảng viên sau khi cập nhật và thông báo thành công, hoặc phản hồi lỗi nếu không tìm thấy Giảng viên để cập nhật.
      */
     @PutMapping("/{id}")
-    public ResponseEntity<Response> updateTeacher(@PathVariable long id, @Valid @RequestBody TeacherDTO teacherDTO) {
+    public ResponseEntity<Response> updateTeacher(@PathVariable long id, @Valid @RequestBody InstructorDTO instructorDTO) {
         try {
-            Optional<TeacherDTO> updatedTeacher = teacherService.updateTeacher(id, teacherDTO);
+            Optional<InstructorDTO> updatedTeacher = instructorService.updateTeacher(id, instructorDTO);
             if (updatedTeacher.isPresent()) {
                 logger.info("Cập nhật thông tin Giảng viên thành công, ID: {}", id);
                 return ResponseEntity.ok(new Response(LocalDateTime.now(), updatedTeacher.get(), "Cập nhật thông tin Giảng viên thành công", HttpStatus.OK.value()));
@@ -159,7 +159,7 @@ public class TeacherController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Response> deleteTeacher(@PathVariable long id) {
         try {
-            if (teacherService.deleteTeacher(id)) {
+            if (instructorService.deleteTeacher(id)) {
                 logger.info("Xóa Giảng viên thành công, ID: {}", id);
                 return ResponseEntity.status(HttpStatus.NO_CONTENT).body(new Response(LocalDateTime.now(), null, "Xóa Giảng viên thành công", HttpStatus.NO_CONTENT.value()));
             } else {
