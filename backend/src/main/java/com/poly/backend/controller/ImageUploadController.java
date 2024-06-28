@@ -20,7 +20,7 @@ public class ImageUploadController {
     public ResponseEntity<ByteArrayResource> getImage(@PathVariable String photo) {
         if (!photo.equals("") || photo != null) {
             try {
-                //duong dan tuyet doi ?
+                //duong dan tuyet doi ?????????
                 Path filename = Paths.get("C:/Users/ADMIN/Downloads/TeachingTrackingEvaluation - Copy/TeachingTrackingEvaluation - Copy/TeachingTrackingEvaluation/backend/src/main/resources/static", photo);
                 byte[] buffer = Files.readAllBytes(filename);
                 ByteArrayResource byteArrayResource = new ByteArrayResource(buffer);
